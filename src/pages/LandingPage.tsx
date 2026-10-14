@@ -1,21 +1,21 @@
 import { Link } from "react-router-dom";
 
 const features = [
-  { title: "業務自動化", desc: "日常業務をAIとワークフローで自動化し、作業時間を最大80%削減します。" },
-  { title: "データ分析", desc: "蓄積されたデータをリアルタイムで可視化し、意思決定をサポートします。" },
-  { title: "API連携", desc: "既存システムとシームレスに連携し、データの一元管理を実現します。" },
+  { title: "24時間オンライン予約", desc: "顧客がいつでもWebから予約でき、電話・メール対応の手間を大幅に削減します。" },
+  { title: "ステータス管理", desc: "待確認・確認済・完了・キャンセルの4段階で予約のライフサイクルを一元管理します。" },
+  { title: "空き枠の柔軟な管理", desc: "日付ごとに予約可能な時間枠を自由に作成・削除。営業日や時間帯を簡単に調整できます。" },
 ];
 
 const cases = [
-  { company: "株式会社ABC", result: "受発注処理の自動化で月40時間の工数削減", industry: "EC・小売" },
-  { company: "DEF株式会社", result: "AIレポート自動生成で報告書作成を90%効率化", industry: "コンサルティング" },
-  { company: "GHI商事", result: "在庫管理の最適化で廃棄ロスを60%削減", industry: "食品卸" },
+  { company: "ABCクリニック", result: "電話予約対応を80%削減し、受付スタッフの負担を軽減", industry: "クリニック" },
+  { company: "DEFヘアサロン", result: "オンライン予約導入で新規顧客の予約率が2倍に向上", industry: "美容院" },
+  { company: "GHIコンサルティング", result: "相談予約の自動受付で月20時間の事務工数を削減", industry: "士業" },
 ];
 
 const plans = [
-  { name: "Starter", price: "¥50,000/月", features: ["基本ワークフロー3本", "メールサポート", "月次レポート"] },
-  { name: "Business", price: "¥150,000/月", features: ["ワークフロー無制限", "API連携5件", "優先サポート", "カスタムダッシュボード"], recommended: true },
-  { name: "Enterprise", price: "お問い合わせ", features: ["全機能利用可能", "専任サポート", "オンプレ対応", "SLA保証"] },
+  { name: "Lite", price: "¥5,000/月", features: ["予約受付（月100件まで）", "メール通知", "基本レポート"] },
+  { name: "Standard", price: "¥15,000/月", features: ["予約受付 無制限", "SMS通知", "スタッフ管理", "カスタムフォーム"], recommended: true },
+  { name: "Premium", price: "お問い合わせ", features: ["全機能利用可能", "複数店舗対応", "API連携", "専任サポート"] },
 ];
 
 export default function LandingPage() {
@@ -23,9 +23,9 @@ export default function LandingPage() {
     <div style={{ fontFamily: "'Segoe UI', sans-serif", color: "#1a1a2e" }}>
       {/* Hero */}
       <section style={{ background: "linear-gradient(135deg, #0f0c29, #302b63, #24243e)", color: "#fff", padding: "80px 20px", textAlign: "center" }}>
-        <h1 style={{ fontSize: "2.5rem", marginBottom: 16 }}>ビジネスを加速する<br />AI業務自動化プラットフォーム</h1>
+        <h1 style={{ fontSize: "2.5rem", marginBottom: 16 }}>予約管理をもっとシンプルに</h1>
         <p style={{ fontSize: "1.2rem", opacity: 0.85, marginBottom: 32, maxWidth: 600, margin: "0 auto 32px" }}>
-          データ入力、レポート作成、API連携——<br />あらゆる定型業務をAIが自動化します。
+          顧客向け予約フォームと管理者ダッシュボードで、<br />予約受付から管理までを一元化します。
         </p>
         <Link to="/booking" style={{ background: "#e94560", color: "#fff", padding: "16px 40px", borderRadius: 8, textDecoration: "none", fontSize: "1.1rem", fontWeight: "bold" }}>
           無料デモを予約する
@@ -81,7 +81,7 @@ export default function LandingPage() {
       {/* CTA */}
       <section style={{ background: "#302b63", color: "#fff", padding: "60px 20px", textAlign: "center" }}>
         <h2 style={{ marginBottom: 16 }}>まずは無料デモでお試しください</h2>
-        <p style={{ opacity: 0.85, marginBottom: 32 }}>30分のデモで、貴社の業務がどう変わるかをお見せします。</p>
+        <p style={{ opacity: 0.85, marginBottom: 32 }}>30分のデモで、予約管理がどう変わるかをお見せします。</p>
         <Link to="/booking" style={{ background: "#e94560", color: "#fff", padding: "16px 40px", borderRadius: 8, textDecoration: "none", fontSize: "1.1rem", fontWeight: "bold" }}>
           デモを予約する
         </Link>
